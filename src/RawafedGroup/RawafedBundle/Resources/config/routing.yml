@@ -1,0 +1,42 @@
+RawafedBundle_home:  
+    pattern:  /
+    defaults: { _controller: RawafedBundle:Index:index }
+    requirements:
+        _method:  GET
+               
+RawafedBundle_clients:
+    pattern:  /clients
+    defaults: { _controller: RawafedBundle:Index:clients }
+    requirements:
+        _method:  GET
+        
+RawafedBundle_contactus:
+    pattern:  /contactus
+    defaults: { _controller: RawafedBundle:Index:contactus }
+    requirements:
+        _method:  GET|POST      
+        
+RawafedBundle_partners:
+    pattern:  /partners
+    defaults: { _controller: RawafedBundle:Index:partners }
+    requirements:
+        _method:  GET
+        
+RawafedBundle_products:
+    pattern:  /products
+    defaults: { _controller: RawafedBundle:Index:products }
+    requirements:
+        _method:  GET|POST
+
+RawafedBundle_services:
+    pattern:  /services
+    defaults: { _controller: RawafedBundle:Index:services }
+    requirements:
+        _method:  GET
+         
+        
+RawafedBundle_technical:
+    pattern:  /technical
+    defaults: { _controller: RawafedBundle:Index:technical }
+    requirements:
+        _method:  GET   

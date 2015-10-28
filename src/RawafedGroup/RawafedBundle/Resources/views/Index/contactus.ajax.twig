@@ -1,0 +1,105 @@
+<div id="contactus_content">
+    <div id="form_content">
+<div class="introduction">
+                {% if app.session.hasFlash('rawafed-notice') %}
+        <div class="rawafed-notice">
+                    {{ app.session.flash('rawafed-notice') }}
+            </div>
+                {% endif %}
+            <h3>Contact Us</h3>
+            <p>Are you interested in working with Rawafed? Please reach out and a business representative will get back to you swiftly.</p>
+        </div>
+
+
+        <div id="contactus_box">
+            <div id="contact_us_address">
+                <table>
+                    <tr>
+                        <td class="address_bold">Numbers :</td>
+                        <td>Toll-free no. : &nbsp;  8001222222<br>
+                            Joint no.&nbsp;: 920029222<br>
+                            International no. 
+                            : +966 920029222</td>
+                    </tr>
+                    <tr>
+                        <td class="address_bold">Fax :</td>
+                        <td>+966 63697333</td>
+                    </tr>
+                    <tr>
+                        <td class="address_bold">Address :</td>
+                        <td >Tower No. 12 - Al Rajhi Towers King Khalid -  Buraidah – Qassim <br></td>
+                    </tr>
+                </table></div>
+            <div id="contactus_form">
+                <div id="formResult">
+                    {{ form_errors(form) }}
+                    </div>
+                    <form action="{{ path('RawafedBundle_contactus') }}" id="frmContactus" 
+                          name="frmContactus"  method="post" {{ form_enctype(form) }}>
+                        <table class="contact_table">
+                            <tr>
+                                <td class="contact_titles">
+                                    <img src="{{ asset('bundles/rawafed/images/bullet.png') }}" class="bullet"  />
+
+                                    {{ form_label(form.name) }}<em>*</em></td>
+                            </tr>
+                            <tr>
+                                <td class="contact_td_padding">
+                                   {{ form_errors(form.name) }}
+                                   {{ form_widget(form.name, { 'attr': {'class': 'contact_form'} }) }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="contact_titles">
+                                        <img src="{{ asset('bundles/rawafed/images/bullet.png') }}" class="bullet" /> 
+                                    {{ form_label(form.email) }}  <em>*</em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="contact_td_padding">
+                                    {{ form_errors(form.email) }}
+                                   {{ form_widget(form.email, { 'attr': {'class': 'contact_form'} }) }}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contact_titles">
+                                            <img src="{{ asset('bundles/rawafed/images/bullet.png') }}" class="bullet" /> 
+                                    {{ form_label(form.subject) }}  <em>*</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contact_td_padding">
+                                    {{ form_errors(form.subject) }}
+                                   {{ form_widget(form.subject, { 'attr': {'class': 'contact_form'} }) }}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="contact_titles">
+                                                <img src="{{ asset('bundles/rawafed/images/bullet.png') }}" class="bullet" /> 
+                                    {{ form_label(form.message) }}  <em>*</em>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="contact_td_padding">
+                                    {{ form_errors(form.message) }}
+                                   {{ form_widget(form.message
+                                        , { 'attr': {'class': 'contact_textarea'} } ) }}
+                                                </td>
+                           {{ form_rest(form) }}
+                                            <tr >
+
+                                                <td style="text-align:right" >
+                                                    <!--  <input type="submit" value="Send" onclick="submitForm(); return false;"  
+                                                             class="contact_button"/>  -->
+
+                                                    <input type="submit" value="Send" onclick="submitForm(); return false;"  class="contact_button"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                 </div>
+        </div>

@@ -1,0 +1,109 @@
+{% extends 'RawafedBundle::layout.html.twig' %}
+
+{% block body %}
+
+<!--<ul class="bxslider">
+  <li><img src="{{ asset('bundles/rawafed/images/home_banner.jpg') }}" /></li>
+  <li><img src="{{ asset('bundles/rawafed/images/partners_banner.jpg') }}" /></li>
+  <li><img src="{{ asset('bundles/rawafed/images/products_banner.jpg') }}" /></li>
+  <li><img src="{{ asset('bundles/rawafed/images/technical_banner.jpg') }}" /></li>
+</ul> -->
+
+<ul class="bxslider">
+  <li> <div class="promo">
+        <div class="promo_img"><img src="{{ asset('bundles/rawafed/images/home_banner.jpg') }}" width="630" height="300" alt="services" /></div>
+        <div class="promo_data">
+            <h2>Rawafed</h2>
+            <p>of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ]
+                when ...of the printing and typesetting industry.         
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            <a class="info_link" href="{{ path('RawafedBundle_home') }}">...more</a>
+            </p>
+        </div>
+    </div></li>
+  <li>    <div class="promo">
+        <div class="promo_img"><img src="{{ asset('bundles/rawafed/images/partners_banner.jpg') }}" width="630" height="300" alt="services" /></div>
+        <div class="promo_data">
+
+            <h2>Partners</h2>
+            <p>of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when ...of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when
+                <a class="info_link" href="{{ path('RawafedBundle_partners') }}">...more</a>
+            </p>
+
+        </div>
+    </div></li>
+  <li><div id="products_page" class="promo">
+    <div class="promo_img">
+        <img src="{{ asset('bundles/rawafed/images/products_banner.jpg') }}" 
+             width="630" height="300" alt="services"  />
+    </div>
+    <div class="promo_data">
+
+        <h2>Products</h2>
+            <p>of the printing and typesetting industry.  
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when ...of the 
+                printing and typesetting industry. 
+                 Lorem Ipsum has been the industry's 
+                standard dummy text ever since the 1500s, when
+                <a class="info_link" href="{{ path('RawafedBundle_products') }}">...more</a>
+            </p>
+
+    </div>
+</div></li>
+  <li><div class="promo">
+    <div class="promo_img"><img src="{{ asset('bundles/rawafed/images/technical_banner.jpg') }}" width="630" height="300" alt="services" /></div>
+    <div class="promo_data">
+
+        <h2>Technical Consultations</h2>
+        <p>of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when ...of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when
+            <a class="info_link" href="{{ path('RawafedBundle_technical') }}">...more</a>
+        </p>
+
+    </div>
+</div></li>
+</ul>
+
+  <!--  <div class="promo">
+        <div class="promo_img"><img src="{{ asset('bundles/rawafed/images/home_banner.jpg') }}" width="630" height="300" alt="services" /></div>
+        <div class="promo_data">
+            <h2>Rawafed</h2>
+            <p>of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ]
+                when ...of the printing and typesetting industry.         
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            <a href="javascript:showMore('home_content');">...more</a>
+            </p>
+        </div>
+    </div> -->
+  <div id="home_content" style="display: none;">
+        <div id="three-cols">
+            <div class="col">
+                <div><img src="{{ asset('bundles/rawafed/images/products_home.jpg') }}" width="294" height="125" /></div>
+                <h2>Products</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                <span class="more"><a href="#"><img src="{{ asset('bundles/rawafed/images/more.gif') }}" width="41" height="16" alt="more" /></a></span> </div>
+            <div class="col">
+                <div><img src="{{ asset('bundles/rawafed/images/services_home.jpg') }}" width="294" height="125" /></div>
+                <h2>Services</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                <span class="more"><a href="#"><img src="{{ asset('bundles/rawafed/images/more.gif') }}" width="41" height="16" alt="more" /></a></span> </div>
+            <div class="col col_noborder">
+                <div><img src="{{ asset('bundles/rawafed/images/consal_home.jpg') }}" width="294" height="125" /></div>
+                <h2>Technical Consultations</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                <span class="more"><a href="#"><img src="{{ asset('bundles/rawafed/images/more.gif') }}" width="41" height="16" alt="more" /></a></span> </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+

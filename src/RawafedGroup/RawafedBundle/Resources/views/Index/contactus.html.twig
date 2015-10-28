@@ -1,0 +1,26 @@
+{% extends 'RawafedBundle::layout.html.twig' %}
+
+{% block body %}
+<div id="main" >
+    <div class="promo">
+        <div class="promo_img"><img src="{{ asset('bundles/rawafed/images/contactus_banner.jpg') }}" width="630" height="300" alt="services" /></div>
+        <div class="promo_data">
+
+            <h2>Contact Us</h2>
+            <p>of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when ...of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when ...of the printing and typesetting industry. 
+                when
+                <a href="javascript:showMore('contactus_content');">...more</a>
+            </p>
+
+        </div>
+    </div>
+        
+ {% include 'RawafedBundle:Index:contactus.ajax.twig' %}
+
+</div>
+
+{% endblock %}

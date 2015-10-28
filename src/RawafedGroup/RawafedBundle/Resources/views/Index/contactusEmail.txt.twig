@@ -1,0 +1,7 @@
+{# src/RawafedGroup/RawafedBundle/Resources/views/Index/contactusEmail.txt.twig #}
+A contact us email was made by {{ enquiry.name }} at {{ "now" | date("Y-m-d H:i") }}.
+
+Reply-To: {{ enquiry.email }}
+Subject: {{ enquiry.subject }}
+Body:
+{{ enquiry.message }}

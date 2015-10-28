@@ -1,0 +1,7 @@
+parameters:
+#    rawafed.example.class: RawafedGroup\RawafedBundle\Example
+
+services:
+#    rawafed.example:
+#        class: %rawafed.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

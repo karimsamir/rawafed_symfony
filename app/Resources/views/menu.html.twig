@@ -1,0 +1,20 @@
+<section id="menu_fixed">
+    
+    <div id="topMenuImage"
+         ><img src="{{ asset('bundles/rawafed/images/menu_top.png')}}" width="137"/>
+    </div>
+    <nav id="navigation" class="menu_fixed_bg">
+        <ul class="sf-menu sf-vertical" id="menuNav">
+            <li class="current"><a data-slide-index="0" class="info_link" id="link-home" href="{{ path('RawafedBundle_home') }}">Home</a></li>
+            <li><a id="link-products" data-slide-index="1" class="info_link" href="{{ path('RawafedBundle_products') }}">Products</a></li>
+            <li><a id="link-services" data-slide-index="2" class="info_link" href="{{ path('RawafedBundle_services') }}">Services</a></li>
+            <li><a id="link-technical" data-slide-index="3" class="info_link" href="{{ path('RawafedBundle_technical') }}">Technical Consultations</a></li>
+            <li><a id="link-partners" data-slide-index="4" class="info_link" href="{{ path('RawafedBundle_partners') }}">Partners</a></li>
+            <li><a id="link-clients" data-slide-index="5" class="info_link" href="{{ path('RawafedBundle_clients') }}">Clients</a></li>
+            <li class="last_noborder">
+                <a class="info_link" id="link-contactus" data-slide-index="6" href="{{ path('RawafedBundle_contactus') }}">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <div><img src="{{ asset('bundles/rawafed/images/menu_bottom.png')}}" width="137"  /></div>
+    </section>

@@ -1,0 +1,4 @@
+# src/RawafedGroup/RawafedBundle/Resources/config/config.yml
+parameters:
+    # Blogger contact email address
+    rawafed.emails.contact_email: k.samir@rawafed-group.com
